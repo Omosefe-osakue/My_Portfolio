@@ -5,6 +5,7 @@
         <meta name ="viewport" content ="width=device-width", initial-scale="1.0">
         <title>Omosefe Osakue's Portfolio Website</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="behavior.js" type="JavaScript"></script>
     </head>
 
     <body>
@@ -12,11 +13,11 @@
             <nav>
                 <img src="imgs\sefe_logo-removebg-preview.png" class="logo" alt="Omosefe's Name as a Logo" a href="#index.html">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#index.html">Home</a></li>
-                    <li class="nav__item"><a href="#aboutMe">About Me</a></li>
-                    <li class="nav__item"><a href="#experience">My Experience</a></li>
-                    <li class="nav__item"><a href="#project">Projects</a></li>
-                    <li class="nav__item"><a href="#contact">Contact</a></li>
+                    <li id="nav__item"><a href="#index.html">Home</a></li>
+                    <li id="nav__item"><a href="#aboutMe">About Me</a></li>
+                    <li id="nav__item"><a href="#experience">My Experience</a></li>
+                    <li id="nav__item"><a href="#project">Projects</a></li>
+                    <li id="nav__item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,15 +32,53 @@
                 </h2>
                 <p class="subtitle_intro">A Software Engineer</p>
                 <br>
-                <button>My CV</button>
-                <button>GitHub</button>
+                <div class="myButtons">
+                    <form>
+                        <button formaction="Omosefe Osakue CV .docx" formtarget="_blank">My CV</button>
+                        <button formaction="https://github.com/Omosefe-osakue" formtarget="_blank">GitHub</button>
+                        <button formaction="https://www.linkedin.com/in/omosefe-osakue/" formtarget="_blank">Linkedin</button>
+                    </form>
+                </div>                
             </div>
             <div>
                 <img class="sefepic" src="imgs\omosefepic-removebg-preview.png" alt="A picture of Omosefe Osakue smiling">
             </div>
         </section> 
+        <br>
+        <hr class="pageSeparator">
+        <br>
+        <!--The About me page -->
+        <section class="about" id="aboutMe"> 
+            <div>
+                <h2 class="aboutMeH">Who am I ?</h2>
+                <p class="aboutMeP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vero voluptates eos odio, iusto maiores temporibus voluptatem obcaecati beatae, rerum enim laudantium. Architecto, a. Tempore quidem voluptatum esse corporis accusamus?</p>
+                <br>
+                <div class="box-container">
+                    <div class="boxes">
+                        <img class="aboutMeI" src="" alt="image to come">
+                        <h4 class="aboutMeMH"></h4>
+                        <p class="aboutMeMP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis minima laboriosam. Alias dolorum fuga libero laboriosam corrupti officia consequuntur sapiente, enim sint non consequatur suscipit quis delectus eos vel.</p>
 
-        <!--My Experience -->
+                    </div>
+                
+                    <div class="boxes">
+                        <img class="aboutMeI" src="" alt="image to come">
+                        <h4 class="aboutMeMH"></h4>
+                        <p class="aboutMeMP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis minima laboriosam. Alias dolorum fuga libero laboriosam corrupti officia consequuntur sapiente, enim sint non consequatur suscipit quis delectus eos vel.</p>
+
+                    </div>
+                    <div class="boxes">
+                        <img class="aboutMeI" src="" alt="image to come">
+                        <h4 class="aboutMeMH"></h4>
+                        <p class="aboutMeMP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis minima laboriosam. Alias dolorum fuga libero laboriosam corrupti officia consequuntur sapiente, enim sint non consequatur suscipit quis delectus eos vel.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr class="pageSeparator">
+        <!--My Experience page -->
     </body>
 
 </html>
